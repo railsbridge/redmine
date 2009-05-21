@@ -51,4 +51,4 @@ namespace :localize do
 
 end
 
-# after "deploy:symlink", "localize:copy_shared_configurations", "localize:link_shared_file_storage", "deploy:cleanup"
+after "deploy:symlink", "localize:copy_shared_configurations", "localize:link_shared_file_storage", "deploy:cleanup"
